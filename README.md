@@ -114,7 +114,7 @@ El código generado por la IA fue adaptado para que la función `login()` retorn
 
 ---
 
-### Integrante 4 — Benítez Mauro Dante | Herramienta: Claude AI
+### Integrante 4 — Mauro | Herramienta: Claude AI
 
 **Diseño del menú principal:**  
 Se utilizó Claude AI para proponer la estructura del menú interactivo con bucle `while` y condicionales `if/elif`, que conecta las funciones de los cuatro módulos y mantiene la sesión activa hasta que el usuario decide cerrarla.
