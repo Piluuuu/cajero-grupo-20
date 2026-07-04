@@ -2,7 +2,7 @@
 # INTEGRANTE 2: Ana Paula Verón - Módulo: Transacciones Monetarias
 # =============================================================================
 
-from cajero import usuarios
+from autenticacion import usuarios
 from menu import mostrar_error, mostrar_exito, mostrar_advertencia
 
 def registrar_operacion(dni, tipo_operacion, monto):

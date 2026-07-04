@@ -6,7 +6,7 @@
 
 # Importaciones de los módulos de los demás integrantes
 # Integrante 1 - Veron Romero Pilar
-from cajero import login
+from autenticacion import login
 # Integrante 2 - Veron Ana Paula
 from transacciones import depositar, extraer
 # Integrante 3 -  Sosa Lopez Milena

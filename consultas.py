@@ -2,7 +2,7 @@
 # INTEGRANTE 3: Milena Sosa - Módulo: Consultas, Transferencias y Registros
 # =============================================================================
 
-from cajero import usuarios
+from autenticacion import usuarios
 from transacciones import registrar_operacion
 from menu import mostrar_error, mostrar_exito, mostrar_advertencia, mostrar_separador
 
