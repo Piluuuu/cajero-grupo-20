@@ -17,18 +17,10 @@ usuarios = {
         "bloqueado":  False,
         "operaciones": []
     },
-    "87654321": {
-        "pin":        "4321",
-        "nombre":     "Mauro Benitez",
-        "saldo":      75500.50,
-        "intentos":   0,
-        "bloqueado":  False,
-        "operaciones": []
-    },
     "11223344": {
         "pin":        "0000",
         "nombre":     "Ana Paula Verón",
-        "saldo":      200000.00,
+        "saldo":      120000.00,
         "intentos":   0,
         "bloqueado":  False,
         "operaciones": []
@@ -36,7 +28,15 @@ usuarios = {
     "29032008": {
         "pin":        "5678",
         "nombre":     "Milena Sosa",
-        "saldo":      3000.00,
+        "saldo":      100000.00,  
+        "intentos":   0,
+        "bloqueado":  False,
+        "operaciones": []
+    },
+    "87654321": {
+        "pin":        "4321",
+        "nombre":     "Mauro Benitez",
+        "saldo":      200000.00,  
         "intentos":   0,
         "bloqueado":  False,
         "operaciones": []
