@@ -63,7 +63,7 @@ Para evaluar el correcto funcionamiento del simulador, se encuentran precargadas
 |-----------------------|---------------|------------------|---------------|
 | Pilar Verón Romero    | `48399733`    | `1234`           | $ 150,000.00  |
 | Ana Paula Verón       | `11223344`    | `0000`           | $ 120,000.00  |
-| Milena Sosa           | `29032008`    | `1000`           | $ 100,000.00  |
+| Milena Sosa           | `29032008`    | `5678`           | $ 100,000.00  |
 | Mauro Benitez         | `87654321`    | `4321`           | $ 200,000.00  |
 
 ---
