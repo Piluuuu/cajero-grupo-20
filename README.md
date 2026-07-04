@@ -55,12 +55,16 @@ python menu.py
 
 > En algunos sistemas puede ser necesario usar `python3` en lugar de `python`.
 
-### Cuentas de prueba disponibles
+## Cuentas de prueba (DNI y PIN)
 
-| DNI | PIN | Titular |
-|-----|-----|---------|
-| 12345678 | 1234 | Usuario de prueba 1 |
-| 87654321 | 4321 | Usuario de prueba 2 |
+Para evaluar el correcto funcionamiento del simulador, se encuentran precargadas las siguientes cuentas en el sistema:
+
+| Titular (Integrante) | DNI de acceso | PIN de seguridad | Saldo Inicial |
+|-----------------------|---------------|------------------|---------------|
+| Pilar Verón Romero    | `48399733`    | `1234`           | $ 150,000.00  |
+| Ana Paula Verón       | `11223344`    | `0000`           | $ 120,000.00  |
+| Milena Sosa           | `29032008`    | `1000`           | $ 100,000.00  |
+| Mauro Benitez         | `87654321`    | `4321`           | $ 200,000.00  |
 
 ---
 
