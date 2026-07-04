@@ -2,12 +2,15 @@
 #  SIMULADOR DE CAJERO AUTOMÁTICO — UTN FRRE | Algoritmos y Estructuras 2026
 #  INTEGRANTE 4: Benítez Mauro Dante
 #  Módulo: Menú principal, gestión de errores y calidad
-# ============================================================================= 
+# =============================================================================
 
 # Importaciones de los módulos de los demás integrantes
-from autenticacion import login                          # Integrante 1 - Veron Romero Pilar
-from transacciones import depositar, extraer            # Integrante 2 - Veron Ana Paula
-from consultas import consultar_saldo, realizar_transferencia, mostrar_historial_sesion  # Integrante 3 -  Sosa Lopez Milena
+# Integrante 1 - Veron Romero Pilar
+from cajero import login
+# Integrante 2 - Veron Ana Paula
+from transacciones import depositar, extraer
+# Integrante 3 -  Sosa Lopez Milena
+from consultas import consultar_saldo, realizar_transferencia, mostrar_historial_sesion
 
 
 # =============================================================================
@@ -24,13 +27,16 @@ def mostrar_separador(titulo=""):
         print(f"  {titulo.center(ancho)}")
         print("  " + "=" * ancho)
 
+
 def mostrar_error(mensaje):
     """Alerta de error estandarizada para todo el sistema."""
     print(f"\n  [ERROR] {mensaje}")
 
+
 def mostrar_advertencia(mensaje):
     """Alerta de advertencia estandarizada para todo el sistema."""
     print(f"\n  [ATENCION] {mensaje}")
+
 
 def mostrar_exito(mensaje):
     """Mensaje de operación exitosa estandarizado para todo el sistema."""
@@ -51,6 +57,7 @@ def mostrar_opciones_menu():
     print("  5. Ver historial de operaciones")
     print("  6. Cerrar sesion")
     print("  " + "-" * 48)
+
 
 def menu_principal(usuario_activo):
     """
@@ -76,7 +83,7 @@ def menu_principal(usuario_activo):
             realizar_transferencia(usuario_activo)   # Integrante 3 - Milena
 
         elif opcion == "5":
-            mostrar_historial_sesion(usuario_activo) # Integrante 3 - Milena
+            mostrar_historial_sesion(usuario_activo)  # Integrante 3 - Milena
 
         elif opcion == "6":
             mostrar_historial_sesion(usuario_activo)
@@ -85,7 +92,8 @@ def menu_principal(usuario_activo):
             break
 
         else:
-            mostrar_advertencia("Opcion invalida. Ingrese un numero del 1 al 6.")
+            mostrar_advertencia(
+                "Opcion invalida. Ingrese un numero del 1 al 6.")
 
 
 # =============================================================================
@@ -103,6 +111,7 @@ def pantalla_bienvenida():
     print("  +--------------------------------------------------+")
     print()
 
+
 def main():
     """
     Funcion principal del sistema.
@@ -116,6 +125,11 @@ def main():
         usuario_activo = login()
 
         if usuario_activo:
+            # Import local para limpiar el historial de la sesión que empieza
+            from consultas import reiniciar_sesion
+            reiniciar_sesion()
+            
+            # Se ingresa al menú interactivo
             menu_principal(usuario_activo)
         else:
             mostrar_error("No se pudo iniciar sesion.")
